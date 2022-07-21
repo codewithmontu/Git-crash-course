@@ -1,0 +1,16 @@
+1. First copy the Project Link from the github.
+2. open your Git base from your computer.
+3. git clone <github_project_path>  ----( Cloning the git project )
+4. git clone <github_project_path> <new_name_to_the_project> ----( Cloning the git project with a new name )
+5. git status
+6. pwd
+7. ls
+8. cd project_name
+9. change something
+10. git status
+11. git add --a
+12. git commit -m "some changes has done"
+13. git status		----( your branch is ahead of 'Origin/master' by 1 commit. )
+( Use "git push" to publish your local commits )
+14. git log     ---(it will show all the Project participants who has commited earlier)
+15. q 		----( come out )

@@ -1,0 +1,14 @@
+Git Base Is a Terminal like Unix or Windows PowerShell.
+-------------------------------------------------------------
+1. git  ---( All Commands )
+2. pwd  ---( Display Presesnt Directory/ Path )
+3. ls	---( To View the Directory files & Folders )
+4. cd <path>	--( Change directory. eg.: cd /c (or) cd Desktop )
+5. git config --global user.name <"codewithmontu">
+6. git config --global user.email <"youremail@example.com">
+7. git config --list
+8. q		( come Out )
+9. git config user.name
+10. git config user.email	( Display creator's name & email )
+11. git config --global core.editor emacs
+12. git config --global core.editor vim		( emacs & vim both are linux editor) 

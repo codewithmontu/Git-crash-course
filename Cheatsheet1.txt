@@ -1,0 +1,67 @@
+What is Git?
+=>  Git is a DevOps tool used for source code management. It is a free and open-source 
+version control system used to handle small to very large projects.
+( Install in your computer & open the git base command prompt from 
+the project folder by right click do open with 'git base')
+
+What is Github?
+=> GitHub is a for-profit company offering a cloud-based Git repository that 
+helps developers store, manage, track and control changes to their projects.
+( Sign Up/ open a account like Facebook on "https://github.com/" )
+
+=> To add a project on github click on + sign add a new reposetory,
+=> Add a project name,
+=> Add description,
+=> For now - Don't click on  "Initialize this repository with : Readme"
+=> Ceate Repository.
+-------------------------------------------------------------------------
+( Install in your computer & open the git base command prompt from 
+the project folder by right click do open with 'git base') :
+
+touch .gitignore   --( optional )
+	( '.gitignore' - eg.: 'big_some_library_folder/' if you don't want to push into Github due to big size. )
+	( 'touch' - to creat empty file )
+touch .gitignore
+	(Host github.com 
+ 	IdentityFile ~/.ssh/github_rsa)
+git config --global user.name <codewithmontu>
+(or)
+git config --global user.name <"code with montu">
+
+git config --global user.email <"youremail@example.com">
+
+git init  --it initialize your project & creates a hidden .git folder
+
+git add . 	--(use "git add <file>..." to update what will be committed)
+(or)
+git restore . 	--(use "git restore <file>..." to discard changes in working directory)
+
+git commit -m "Initial Commit"
+git status -- (To check the final status)
+
+(If the created reposetory project folder is 'private' you have to Generate Authentic Key for that at the Account level settings ) :
+------------------------------------------------------------------------------------------------------------------------------------
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+	
+	ssh-keygen -t ed25519 -C <"your_email@example.com">
+		(or)--Note: If you are using a legacy system that doesn't support the Ed25519 algorithm, use:
+	ssh-keygen -t rsa -b 4096 -C <"youre_mail@example.com">
+	cat <generated key path> --( it will generate the 'Authentic Key' , 
+		copy & past and add that in the github account settings)
+	tail <path to id_rsa.pub> # Add this key to your GitHub account
+
+git remote add origin <ssh url.git>  --( first click/select SSH & copy from the Github project 
+				link Then past on git base. It  Link with the Account & Project Address )
+
+git push origin master  ---( To uload the project )
+
+
+(To add any file again/ or for update) : 3-steps need to do.
+------------------------------------------------------------
+git add . 	--(use "git add <file>..." to update what will be committed)
+git commit -m "Add some_msg"
+git push origin master  ---( To uload the project )
+
+( & To change 'Private' to 'public' you need to change in the project level settings. ) End.
+
+
